@@ -82,7 +82,7 @@
 			  			<div class="bottom-text">
 			  				<h1>Our site is launching soon.</h1>
 				  			<p>
-							Revoluno Labs solve wide variety of people problems with Deep Learning and solutions we deliver help companies a lot.
+							At Revoluno Labs we aim to solve wide variety of problems with state of the art Machine/Deep Learning technologies.
 				  			</p>			  				
 			  			</div>			  						  			   			
 
@@ -134,7 +134,7 @@
 
 					   			<h1>Get To Know Us.</h1>
 
-					   			<p class="lead">We are team of Designers, Data Scientists and Analysts who focus on solving major problems that Mankind is facing now. We deal with Machine/Deep Learning, Optimization Techniques and other techniques to make the product live. </p>
+					   			<p class="lead">We are team of Designers, Data Scientists and Engineers who focus on solving major problems that majority of people are facing. We deal with Machine/Deep Learning, Optimization Techniques to make the product 'A'live. </p>
 
 					   		</div>   		
 					   	</div> <!-- /tab-content-intro -->
@@ -261,23 +261,23 @@
 					   		<div class="col-twelve">
 
 					            <!-- form -->
-					            <form name="contactForm" id="contactForm" method="post" action="">
+					            <form id="contactForm">
 					      			<fieldset>
 
 					                  <div class="form-field">
-					 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+					 						   <input name="form_field_1" type="text" id="form_field_1" placeholder="Name" value="" minlength="2" required="">
 					                  </div>
 					                  <div class="form-field">
-						      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+						      			   <input name="form_field_2" type="email" id="form_field_2" placeholder="Email" value="" required="">
 						               </div>
 					                  <div class="form-field">
-						     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+						     				   <input name="form_field_3" type="text" id="form_field_3" placeholder="Subject" value="">
 						               </div>                       
 					                  <div class="form-field">
-						                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+						                 	<textarea name="form_field_4" id="form_field_4" placeholder="message" rows="10" cols="50" required=""></textarea>
 						               </div>                      
 					                 <div class="form-field">
-					                     <button class="submitForm button button-primary large">Submit</button>
+					                     <button class="submitForm button button-primary large" type="submit" id="submit-form">Submit</button>
 
 					                     <div id="submit-loader">
 					                        <div class="text-loader">Sending...</div>                             
@@ -327,14 +327,14 @@
 					   	<div class="row form-wrap tab-entry-content">
 					   		<div class="col-twelve">
 
-					   			<form id="mc-form" class="group" novalidate="true">
+					   			<form id="subForm">
 
 										<div class="form-field">					
-						   				<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">					   				
+						   				<input type="email" value="" name="form_field_1" class="email" id="mce-EMAIL" placeholder="email address" required="">					   				
 						   			</div>
 
 							   		<div class="form-field">	
-							   			<input type="submit" value="Get Notified" name="subscribe" class="button button-primary large">
+							   			<input type="submit" value="Get Notified" id="sub-form" name="subscribe" class="button button-primary large">
 							   		</div>
 
 							   		<label for="mce-EMAIL" class="subscribe-message"></label>
@@ -437,8 +437,43 @@
    <!-- Java Script
    ================================================== --> 
    <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/jquery.serialize-object.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+
+   <script type="text/javascript">
+		var $form = $('form#contactForm'),
+		    url = 'https://script.google.com/macros/s/AKfycbyjgL4-ZjcGeVaSz6tc-EGBKAWOfllKsn_QcrObjW4S5bVCrUbj/exec'
+
+		$('#submit-form').on('click', function(e) {
+		  e.preventDefault();
+		  var jqxhr = $.ajax({
+		    url: url,
+		    method: "GET",
+		    dataType: "json",
+		    data: $form.serializeObject()
+		  }).success(
+		    alert("Form Submitted!")
+		  );
+		  
+		})
+
+		var $subform = $('form#subForm'),
+			url1 = 'https://script.google.com/macros/s/AKfycbwTHRAUSxVlFgQ3C0MPM7t598CahXvblzjjfqsME6jhMsP2QxI/exec'
+		$('#sub-form').on('click', function(e) {
+			console.log($subform.serializeObject());
+		  e.preventDefault();
+		  var jqxhr = $.ajax({
+		    url: url1,
+		    method: "GET",
+		    dataType: "json",
+		    data: $subform.serializeObject()
+		  }).success(
+		    alert("Subscribed !!!")
+		  );
+		  
+		})
+   </script>
 
 </body>
 
