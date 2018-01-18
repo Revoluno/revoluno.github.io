@@ -58,7 +58,7 @@ html, body {
 	height: 100%;
 }
 body {
-	background: #3F57CF;
+	background: #FFFFFF;
 	font-family: "roboto-regular", sans-serif;
 	font-size: 1.6rem;
 	line-height: 3rem;
@@ -217,7 +217,7 @@ code {
 	margin: 0 .2rem;
 	padding: .3rem .6rem;
 	white-space: nowrap;
-	background: #3F57CF;
+	background: #2D23A3;
 	border: 1px solid #E1E1E1;
 	border-radius: 3px;
 }
@@ -239,7 +239,7 @@ abbr[title], dfn[title] {
 	cursor: help;
 }
 mark {
-	background: #FFF49B;
+	background: #2D23A3;
 	color: #000;
 }
 hr {
@@ -1764,7 +1764,7 @@ footer .footer-bottom a:focus {
 
 footer .footer-bottom .footer-logo {
 	display: inline-block;
-	width: 150px;
+	width: 500px;
 }
 
 footer .copyright {
@@ -1846,7 +1846,7 @@ footer .back-to-top a i {
 		font-size: 1.4rem;
 	}
 	footer .footer-bottom .footer-logo {
-		width: 140px;
+		width: 400px;
 	}
 }
 @media only screen and (max-width:600px) {
@@ -1863,7 +1863,7 @@ footer .back-to-top a i {
 		font-size: 1.3rem;
 	}
 	footer .footer-bottom .footer-logo {
-		width: 130px;
+		width: 300px;
 	}
 	footer .copyright span {
 		display: block;
@@ -1885,7 +1885,7 @@ footer .back-to-top a i {
 		padding: 4.8rem 1.1rem 4.8rem;
 	}
 	footer .footer-bottom .footer-logo {
-		width: 120px;
+		width: 250px;
 	}
 	footer .back-to-top a {
 		padding: 1.2rem 2.3rem 1.5rem;
