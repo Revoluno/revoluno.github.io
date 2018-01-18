@@ -1421,6 +1421,30 @@ header .social-links ul li a:focus {
 /* ------------------------------------------------------------------- 
  * tab about - (_layout.css)  
  * ------------------------------------------------------------------- */
+
+.vizit {
+
+	display: block;
+	position: absolute;
+	right: 540px;
+	top: 20px;
+	margin: 0px;
+	padding: 0px;
+	outline: 0;
+	border: none;
+	width: 55px;
+	height: 35px;
+	background: url("../images/vizit.png") no-repeat center;
+	background-size: 55px 35px;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
 .about-list {
 	margin-top: 1.2rem;
 	text-align: center;
