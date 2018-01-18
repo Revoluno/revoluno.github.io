@@ -1641,8 +1641,8 @@ header .social-links ul li a:focus {
 	color: rgba(255, 255, 255, 0.5);
 }
 #cta .button {
-	background: #02312e;
-	color: #FFFFFF;
+	background: #FFFFFF;
+	color: #2D23A3;
 }
 #cta .button:hover {
 	background: #151515;
