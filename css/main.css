@@ -814,7 +814,7 @@ header .logo {
 	position: absolute;
 	left: 26px;
 	top: 0;
-	margin-top: 78px;
+	margin-top: 54px;
 }
 header .logo a {
 	display: block;
@@ -870,7 +870,7 @@ header .social-links ul li a:visited {
 
 header .social-links ul li a:hover,
 header .social-links ul li a:focus {
-	color: #057f78;
+	color: #5099F9;
 }
 
 /* ------------------------------------------------------------------- 
@@ -883,9 +883,9 @@ header .social-links ul li a:focus {
 		margin-top: 42px;
 	}
 	header .logo a {
-		width: 90px;
-		height: 78px;
-		background-size: 90px 78px;
+		width: 370px;
+		height: 50px;
+		background-size: 370px 50px;
 	}
 	header .social-links {
 		right: 18px;
@@ -898,9 +898,9 @@ header .social-links ul li a:focus {
 		margin-top: 36px;
 	}
 	header .logo a {
-		width: 80px;
-		height: 70px;
-		background-size: 80px 70px;
+		width: 340px;
+		height: 45px;
+		background-size: 340px 45px;
 	}
 	header .social-links {
 		right: 45px;
@@ -910,19 +910,19 @@ header .social-links ul li a:focus {
 @media only screen and (max-width:600px) {
 	header .logo {
 		left: 41px;
-		margin-top: 30px;
+		margin-top: 37px;
 	}
 	header .logo a {
-		width: 70px;
-		height: 61px;
-		background-size: 70px 61px;
+		width: 220px;
+		height: 30px;
+		background-size: 220px 30px;
 	}
 	header .social-links {
 		right: 41px;
 		top: 42px;
 	}
 	header .social-links ul {
-		font-size: 2.4rem;
+		font-size: 1.6rem;
 	}
 }
 @media only screen and (max-width:500px) {
@@ -933,24 +933,24 @@ header .social-links ul li a:focus {
 		right: 35px;
 	}
 	header .social-links ul {
-		font-size: 2.1rem;
+		font-size: 1.3rem;
 	}
 	header .social-links ul li {
-		padding: 0 .6rem;
+		padding: 0 .3rem;
 	}
 }
 @media only screen and (max-width:380px) {
 	header .logo {
 		left: 30px;
-		margin-top: 30px;
+		margin-top: 38px;
 	}
 	header .logo a {
-		width: 60px;
-		height: 52px;
-		background-size: 60px 52px;
+		width: 180px;
+		height: 25px;
+		background-size: 180px 25px;
 	}
 	header .social-links ul {
-		font-size: 2rem;
+		font-size: 1.3rem;
 	}
 	header .social-links li {
 		padding: 0 .3rem;
@@ -1053,6 +1053,7 @@ header .social-links ul li a:focus {
 	font-family: "roboto-black", sans-serif;
 	font-size: 12rem;
 	line-height: 1;
+	right: 0.1em;
 	padding: 0;
 	margin-bottom: 1.5rem;
 }
@@ -1061,7 +1062,7 @@ header .social-links ul li a:focus {
 	font-size: .17em;
 	color: rgba(255, 255, 255, 0.3);
 	top: -3.6em;
-	right: 1em;
+	right: 0.3em;
 }
 .main-content-tablecell h1 {
 	font-size: 4.2rem;
@@ -1723,7 +1724,7 @@ footer .footer-social-list a:visited {
 
 footer .footer-social-list a:hover,
 footer .footer-social-list a:focus {
-	color: #057f78;
+	color: #2D23A3;
 }
 
 footer .footer-social-list li {
