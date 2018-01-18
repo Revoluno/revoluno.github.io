@@ -1299,7 +1299,7 @@ header .social-links ul li a:focus {
 	color: rgba(17, 17, 17, 0.8);
 }
 #info .tabs-wrap ul.tabs li.active {
-	background: #151515;
+	background: #2D23A3;
 	color: #FFFFFF;
 	border: none;
 }
