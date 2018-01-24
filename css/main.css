@@ -1902,6 +1902,7 @@ footer .back-to-top a i {
 	}
 	footer .footer-social-list li span {
 		display: none;
+		font-size: 1.3rem;
 	}
 }
 @media only screen and (max-width:400px) {
@@ -1910,6 +1911,9 @@ footer .back-to-top a i {
 	}
 	footer .footer-bottom .footer-logo {
 		width: 250px;
+	}
+	footer .footer-social-list li span {
+		font-size: 1.3rem;
 	}
 	footer .back-to-top a {
 		padding: 1.2rem 2.3rem 1.5rem;
